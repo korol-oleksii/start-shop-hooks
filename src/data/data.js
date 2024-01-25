@@ -22,11 +22,11 @@ let dataPage = {
     header: {
         logo: headerLogo,
         navLinks: [
-            {id:1, linkUrl: '/start-shop-hooks/', linkName: 'Home'},
-            {id:2, linkUrl: '/start-shop-hooks/products', linkName: 'Products'},
-            {id:3, linkUrl: '/start-shop-hooks/delivery', linkName: 'Delivery'},
-            {id:4, linkUrl: '/start-shop-hooks/about', linkName: 'About'},
-            {id:5, linkUrl: '/start-shop-hooks/contacts', linkName: 'Contacts'},
+            {id:1, linkUrl: '/', linkName: 'Home'},
+            {id:2, linkUrl: '/products/', linkName: 'Products'},
+            {id:3, linkUrl: '/delivery/', linkName: 'Delivery'},
+            {id:4, linkUrl: '/about/', linkName: 'About'},
+            {id:5, linkUrl: '/contacts/', linkName: 'Contacts'},
         ]
     },
     products: {
@@ -48,7 +48,6 @@ let dataPage = {
                 category: 'Technics',
                 desc: 'GoPro camera from categories Technics',
                 price: '75.85',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 2,
@@ -58,7 +57,6 @@ let dataPage = {
                 category: 'Sports products',
                 desc: 'Sneakers from categories Sports products',
                 price: '89.99',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 3,
@@ -68,7 +66,6 @@ let dataPage = {
                 category: 'Travel products',
                 desc: 'Travel cases from categories Travel products',
                 price: '21.15',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 4,
@@ -78,7 +75,6 @@ let dataPage = {
                 category: 'Products for active travel',
                 desc: 'Skis and snowboards from categories Products for active travel',
                 price: '120.00',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 5,
@@ -88,7 +84,6 @@ let dataPage = {
                 category: 'Various assortment',
                 desc: 'Photo frames from categories Various assortment',
                 price: '5.20',
-                url: '/start-shop-hooks/products'
             },
 
             {
@@ -99,7 +94,6 @@ let dataPage = {
                 category: 'Technics',
                 desc: 'Photo camera Nikon from categories Technics',
                 price: '85.00',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 7,
@@ -109,7 +103,6 @@ let dataPage = {
                 category: 'Sports products',
                 desc: 'Tennis from categories Sports products',
                 price: '55.99',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 8,
@@ -119,7 +112,6 @@ let dataPage = {
                 category: 'Travel products',
                 desc: 'Neck pillow from categories Travel products',
                 price: '9.99',
-                url: '/start-shop-hooks/products'
             },
             {
                 id: 9,
@@ -129,7 +121,6 @@ let dataPage = {
                 category: 'Various assortment',
                 desc: 'Photo frames from categories Various assortment',
                 price: '25.00',
-                url: '/start-shop-hooks/products'
             }
         ]
     },

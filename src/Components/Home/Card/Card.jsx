@@ -3,7 +3,7 @@ import buyCart from '../../../assets/img/buy.svg';
 import buyAddCart from '../../../assets/img/cart.svg';
 import {useState} from "react";
 
-const Card = ({img, img2, title, category, desc, price, url}) => {
+const Card = ({img, img2, title, category, desc, price}) => {
 
     const [photo, setPhoto] = useState(img);
 
@@ -17,7 +17,7 @@ const Card = ({img, img2, title, category, desc, price, url}) => {
     return (
         <div className="Card">
             <div className="Card__image">
-                <a href={url} className="Card__image--link">
+                <a href="#product-card" className="Card__image--link">
                     <img src={photo} alt={title}/>
                 </a>
             </div>
@@ -29,7 +29,7 @@ const Card = ({img, img2, title, category, desc, price, url}) => {
                 </div>
             </div>
             <div className="Card__desc">
-                <a href={url} className="Card__desc--link">
+                <a href="#product-card" className="Card__desc--link">
                     <span className="Card__title">
                         {title}
                     </span>

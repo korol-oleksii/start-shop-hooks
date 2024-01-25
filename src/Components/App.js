@@ -15,11 +15,11 @@ const App = (props) => {
             <main className="main">
                 <div className="main__container">
                     <Routes>
-                        <Route path='start-shop-hooks/' element={<Home dataProducts={props.data.products}/>}/>
-                        <Route path='start-shop-hooks/products' element={<Products dataProducts={props.data.products}/>}/>
-                        <Route path='start-shop-hooks/delivery' element={<Delivery/>}/>
-                        <Route path='start-shop-hooks/about' element={<About/>}/>
-                        <Route path='start-shop-hooks/contacts' element={<Contacts/>}/>
+                        <Route path='/' element={<Home dataProducts={props.data.products}/>}/>
+                        <Route path='/products/' element={<Products dataProducts={props.data.products}/>}/>
+                        <Route path='/delivery/' element={<Delivery/>}/>
+                        <Route path='/about/' element={<About/>}/>
+                        <Route path='/contacts/' element={<Contacts/>}/>
                     </Routes>
                 </div>
             </main>
