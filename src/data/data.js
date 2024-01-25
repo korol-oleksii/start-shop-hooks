@@ -22,11 +22,11 @@ let dataPage = {
     header: {
         logo: headerLogo,
         navLinks: [
-            {id:1, linkUrl: '/index', linkName: 'Home'},
-            {id:2, linkUrl: '/products', linkName: 'Products'},
-            {id:3, linkUrl: '/delivery', linkName: 'Delivery'},
-            {id:4, linkUrl: '/about', linkName: 'About'},
-            {id:5, linkUrl: '/contacts', linkName: 'Contacts'},
+            {id:1, linkUrl: 'start-shop-hooks/', linkName: 'Home'},
+            {id:2, linkUrl: 'start-shop-hooks/products', linkName: 'Products'},
+            {id:3, linkUrl: 'start-shop-hooks/delivery', linkName: 'Delivery'},
+            {id:4, linkUrl: 'start-shop-hooks/about', linkName: 'About'},
+            {id:5, linkUrl: 'start-shop-hooks/contacts', linkName: 'Contacts'},
         ]
     },
     products: {
