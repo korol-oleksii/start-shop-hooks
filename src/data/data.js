@@ -22,7 +22,7 @@ let dataPage = {
     header: {
         logo: headerLogo,
         navLinks: [
-            {id:1, linkUrl: '/', linkName: 'Home'},
+            {id:1, linkUrl: '/index', linkName: 'Home'},
             {id:2, linkUrl: '/products', linkName: 'Products'},
             {id:3, linkUrl: '/delivery', linkName: 'Delivery'},
             {id:4, linkUrl: '/about', linkName: 'About'},
