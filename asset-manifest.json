@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/start-shop-hooks/static/css/main.7163a5dd.css",
-    "main.js": "/start-shop-hooks/static/js/main.70b3f38f.js",
+    "main.js": "/start-shop-hooks/static/js/main.821d2759.js",
     "static/media/sports-tennis-2.jpg": "/start-shop-hooks/static/media/sports-tennis-2.bbcaac4a34ef461e9635.jpg",
     "static/media/travel-products-neck.jpg": "/start-shop-hooks/static/media/travel-products-neck.f8adb0284350f79b62cc.jpg",
     "static/media/asortment-selfie-2.jpg": "/start-shop-hooks/static/media/asortment-selfie-2.b5056bcc70aba07eb9da.jpg",
@@ -25,10 +25,10 @@
     "static/media/buy.svg": "/start-shop-hooks/static/media/buy.ce71e351a18316bd17f06837aff307c5.svg",
     "static/media/cart.svg": "/start-shop-hooks/static/media/cart.a27d088d5a4c03591653cda965809a66.svg",
     "main.7163a5dd.css.map": "/start-shop-hooks/static/css/main.7163a5dd.css.map",
-    "main.70b3f38f.js.map": "/start-shop-hooks/static/js/main.70b3f38f.js.map"
+    "main.821d2759.js.map": "/start-shop-hooks/static/js/main.821d2759.js.map"
   },
   "entrypoints": [
     "static/css/main.7163a5dd.css",
-    "static/js/main.70b3f38f.js"
+    "static/js/main.821d2759.js"
   ]
 }
