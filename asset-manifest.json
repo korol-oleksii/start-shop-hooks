@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/start-shop-hooks/static/css/main.7163a5dd.css",
+    "main.js": "/start-shop-hooks/static/js/main.70b3f38f.js",
+    "static/media/sports-tennis-2.jpg": "/start-shop-hooks/static/media/sports-tennis-2.bbcaac4a34ef461e9635.jpg",
+    "static/media/travel-products-neck.jpg": "/start-shop-hooks/static/media/travel-products-neck.f8adb0284350f79b62cc.jpg",
+    "static/media/asortment-selfie-2.jpg": "/start-shop-hooks/static/media/asortment-selfie-2.b5056bcc70aba07eb9da.jpg",
+    "static/media/active-travel-2.jpg": "/start-shop-hooks/static/media/active-travel-2.77c5b7ba128daefbe718.jpg",
+    "static/media/travel-products-2.jpg": "/start-shop-hooks/static/media/travel-products-2.ddc06a82fb1f8f9a7ab5.jpg",
+    "static/media/sports-tennis.jpg": "/start-shop-hooks/static/media/sports-tennis.f42dff6af6b5caaf926c.jpg",
+    "static/media/travel-products.jpg": "/start-shop-hooks/static/media/travel-products.3ad9af6a8ef9f164b40f.jpg",
+    "static/media/asortment-selfie.jpg": "/start-shop-hooks/static/media/asortment-selfie.cf410c653f09f1f29749.jpg",
+    "static/media/technics-photo-camera.jpg": "/start-shop-hooks/static/media/technics-photo-camera.f83149cfd4835b545bf8.jpg",
+    "static/media/photo-frame.jpg": "/start-shop-hooks/static/media/photo-frame.830adf3023281f373ef7.jpg",
+    "static/media/sports.jpg": "/start-shop-hooks/static/media/sports.00d9c599173ef615084f.jpg",
+    "static/media/active-travel.jpg": "/start-shop-hooks/static/media/active-travel.1556463cb51a04bd8a74.jpg",
+    "static/media/photo-frame-2.jpg": "/start-shop-hooks/static/media/photo-frame-2.f7675e9e6e6e7239fd45.jpg",
+    "static/media/sports-2.jpg": "/start-shop-hooks/static/media/sports-2.93d0680252256b428ea8.jpg",
+    "static/media/technics.jpg": "/start-shop-hooks/static/media/technics.20c73fb5feb1f4fc2feb.jpg",
+    "static/media/technics-2.jpg": "/start-shop-hooks/static/media/technics-2.0d906358613ed4606006.jpg",
+    "static/media/technics-photo-camera-2.jpg": "/start-shop-hooks/static/media/technics-photo-camera-2.e68f565a7fd24ab2b4b4.jpg",
+    "static/media/travel-products-neck-2.jpg": "/start-shop-hooks/static/media/travel-products-neck-2.f1ea487fec69906efc6d.jpg",
+    "static/media/logo.png": "/start-shop-hooks/static/media/logo.d438fcfead828ce0e701.png",
+    "index.html": "/start-shop-hooks/index.html",
+    "static/media/buy.svg": "/start-shop-hooks/static/media/buy.ce71e351a18316bd17f06837aff307c5.svg",
+    "static/media/cart.svg": "/start-shop-hooks/static/media/cart.a27d088d5a4c03591653cda965809a66.svg",
+    "main.7163a5dd.css.map": "/start-shop-hooks/static/css/main.7163a5dd.css.map",
+    "main.70b3f38f.js.map": "/start-shop-hooks/static/js/main.70b3f38f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7163a5dd.css",
+    "static/js/main.70b3f38f.js"
+  ]
+}
