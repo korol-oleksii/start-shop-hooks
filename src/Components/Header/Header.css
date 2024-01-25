@@ -1,0 +1,22 @@
+.header__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 16px 32px;
+  border-bottom: 1px solid beige;
+}
+.header .Cart .button {
+  border: none;
+  padding: 0;
+}
+.header .Cart .button img {
+  transition: 0.2s;
+}
+.header .Cart .button:hover {
+  border-radius: 50%;
+  background-color: transparent;
+  opacity: 0.85;
+}
+
+/*# sourceMappingURL=Header.css.map */

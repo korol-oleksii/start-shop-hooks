@@ -1,0 +1,23 @@
+.Products {
+  display: flex;
+  gap: 48px;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.content {
+  flex: 1;
+
+  &__subtitle {
+    margin-bottom: 16px;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+}

@@ -1,0 +1,15 @@
+.logo__link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.logo__link img {
+  height: 80px;
+}
+.logo__slug {
+  font-size: 20px;
+  line-height: 100%;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=Logo.css.map */

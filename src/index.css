@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+*:focus {
+  outline: 0;
+  box-shadow: none;
+  border: none;
+}
+
+html, body {
+  height: 100%;
+  background-color: beige;
+  font: 14px/18px Arial, sans-serif;
+}
+
+@media (any-hover: hover) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #999;
+  }
+  @-moz-document url-prefix() {
+    body {
+      scrollbar-color: #E3D3BF transparent;
+      scrollbar-width: thin;
+    }
+  }
+}
+#root {
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #123a3b;
+  font-weight: normal;
+  transition: 0.15s;
+}
+a:hover {
+  color: #448688;
+}
+a:active {
+  color: #000;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.input {
+  border: 1px solid #123a3b;
+  background-color: transparent;
+  min-height: 32px;
+  padding: 0 8px;
+  font-size: 14px;
+  line-height: 100%;
+  border-radius: 16px;
+}
+.input:focus {
+  outline: 0;
+}
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.offset-h-sm {
+  padding: 0 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 16px 0;
+}
+
+/*# sourceMappingURL=index.css.map */

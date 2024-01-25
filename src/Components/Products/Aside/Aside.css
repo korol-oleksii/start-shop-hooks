@@ -1,0 +1,32 @@
+.Aside {
+  flex: 0 1 320px;
+  border-right: 1px solid beige;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.Aside__title {
+  padding-left: 32px;
+}
+.Aside ul {
+  list-style: none;
+  padding: 0;
+}
+.Aside__list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.Aside__link {
+  display: block;
+  padding: 8px 16px 8px 32px;
+  border-left: 4px solid transparent;
+}
+.Aside__link:hover {
+  background-color: #fcfcfa;
+  border-color: #cbcb6b;
+  color: black;
+  transform: scale(1.03);
+}
+
+/*# sourceMappingURL=Aside.css.map */

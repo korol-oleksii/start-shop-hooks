@@ -1,0 +1,22 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  max-width: 1366px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  height: 100%;
+}
+
+//main
+.main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  background-color: #fff;
+
+  &__container > * {
+    padding: 16px 32px;
+  }
+}

@@ -1,0 +1,29 @@
+.search {
+  flex: 0 1 320px;
+
+  &__form {
+    max-width: 220px;
+    transition: .8s;
+
+    &:focus-within {
+      max-width: 320px;
+    }
+  }
+
+  &__label {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+    opacity: .8;
+  }
+  &__input {
+    padding-left: 40px;
+    width: 100%;
+    transition: .8s;
+  }
+}
