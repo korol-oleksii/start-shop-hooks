@@ -17,7 +17,7 @@ const Card = ({img, img2, title, category, desc, price}) => {
     return (
         <div className="Card">
             <div className="Card__image">
-                <a href="start-shop-hooks/products" className="Card__image--link">
+                <a href="/start-shop-hooks/products" className="Card__image--link">
                     <img src={photo} alt={title}/>
                 </a>
             </div>
@@ -29,7 +29,7 @@ const Card = ({img, img2, title, category, desc, price}) => {
                 </div>
             </div>
             <div className="Card__desc">
-                <a href="start-shop-hooks/products" className="Card__desc--link">
+                <a href="/start-shop-hooks/products" className="Card__desc--link">
                     <span className="Card__title">
                         {title}
                     </span>
