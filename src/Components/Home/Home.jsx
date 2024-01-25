@@ -20,6 +20,7 @@ const Home = (props) => {
                                           category={product.category}
                                           desc={product.desc}
                                           price={product.price}
+                                          url={product.url}
                                           key={product.id}/>)
                             }
                         </div>

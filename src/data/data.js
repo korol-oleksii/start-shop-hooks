@@ -22,11 +22,11 @@ let dataPage = {
     header: {
         logo: headerLogo,
         navLinks: [
-            {id:1, linkUrl: 'start-shop-hooks/', linkName: 'Home'},
-            {id:2, linkUrl: 'start-shop-hooks/products', linkName: 'Products'},
-            {id:3, linkUrl: 'start-shop-hooks/delivery', linkName: 'Delivery'},
-            {id:4, linkUrl: 'start-shop-hooks/about', linkName: 'About'},
-            {id:5, linkUrl: 'start-shop-hooks/contacts', linkName: 'Contacts'},
+            {id:1, linkUrl: '/start-shop-hooks/', linkName: 'Home'},
+            {id:2, linkUrl: '/start-shop-hooks/products', linkName: 'Products'},
+            {id:3, linkUrl: '/start-shop-hooks/delivery', linkName: 'Delivery'},
+            {id:4, linkUrl: '/start-shop-hooks/about', linkName: 'About'},
+            {id:5, linkUrl: '/start-shop-hooks/contacts', linkName: 'Contacts'},
         ]
     },
     products: {
@@ -47,7 +47,8 @@ let dataPage = {
                 title: 'GoPro camera 10 Black',
                 category: 'Technics',
                 desc: 'GoPro camera from categories Technics',
-                price: '75.85'
+                price: '75.85',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 2,
@@ -56,7 +57,8 @@ let dataPage = {
                 title: 'Sneakers',
                 category: 'Sports products',
                 desc: 'Sneakers from categories Sports products',
-                price: '89.99'
+                price: '89.99',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 3,
@@ -65,7 +67,8 @@ let dataPage = {
                 title: 'Travel cases',
                 category: 'Travel products',
                 desc: 'Travel cases from categories Travel products',
-                price: '21.15'
+                price: '21.15',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 4,
@@ -74,7 +77,8 @@ let dataPage = {
                 title: 'Skis and snowboards',
                 category: 'Products for active travel',
                 desc: 'Skis and snowboards from categories Products for active travel',
-                price: '120.00'
+                price: '120.00',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 5,
@@ -83,7 +87,8 @@ let dataPage = {
                 title: 'Photo frames',
                 category: 'Various assortment',
                 desc: 'Photo frames from categories Various assortment',
-                price: '5.20'
+                price: '5.20',
+                url: '/start-shop-hooks/products'
             },
 
             {
@@ -93,7 +98,8 @@ let dataPage = {
                 title: 'Photo camera Nikon',
                 category: 'Technics',
                 desc: 'Photo camera Nikon from categories Technics',
-                price: '85.00'
+                price: '85.00',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 7,
@@ -102,7 +108,8 @@ let dataPage = {
                 title: 'Tennis rocket',
                 category: 'Sports products',
                 desc: 'Tennis from categories Sports products',
-                price: '55.99'
+                price: '55.99',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 8,
@@ -111,7 +118,8 @@ let dataPage = {
                 title: 'Neck pillow',
                 category: 'Travel products',
                 desc: 'Neck pillow from categories Travel products',
-                price: '9.99'
+                price: '9.99',
+                url: '/start-shop-hooks/products'
             },
             {
                 id: 9,
@@ -120,7 +128,8 @@ let dataPage = {
                 title: 'Selfie stick',
                 category: 'Various assortment',
                 desc: 'Photo frames from categories Various assortment',
-                price: '25.00'
+                price: '25.00',
+                url: '/start-shop-hooks/products'
             }
         ]
     },
