@@ -16,10 +16,10 @@ const App = (props) => {
                 <div className="main__container">
                     <Routes>
                         <Route path='/' element={<Home dataProducts={props.data.products}/>}/>
-                        <Route path='/products/' element={<Products dataProducts={props.data.products}/>}/>
-                        <Route path='/delivery/' element={<Delivery/>}/>
-                        <Route path='/about/' element={<About/>}/>
-                        <Route path='/contacts/' element={<Contacts/>}/>
+                        <Route path='/products' element={<Products dataProducts={props.data.products}/>}/>
+                        <Route path='/delivery' element={<Delivery/>}/>
+                        <Route path='/about' element={<About/>}/>
+                        <Route path='/contacts' element={<Contacts/>}/>
                     </Routes>
                 </div>
             </main>
