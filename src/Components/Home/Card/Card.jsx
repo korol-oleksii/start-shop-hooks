@@ -2,6 +2,7 @@ import './Card.css';
 import buyCart from '../../../assets/img/buy.svg';
 import buyAddCart from '../../../assets/img/cart.svg';
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 const Card = ({img, img2, title, category, desc, price}) => {
 
@@ -17,9 +18,9 @@ const Card = ({img, img2, title, category, desc, price}) => {
     return (
         <div className="Card">
             <div className="Card__image">
-                <a href="#product-card" className="Card__image--link">
+                <Link to="/products" className="Card__image--link">
                     <img src={photo} alt={title}/>
-                </a>
+                </Link>
             </div>
             <div className="Card__meta">
                 <div className="Card__cat">
@@ -29,14 +30,14 @@ const Card = ({img, img2, title, category, desc, price}) => {
                 </div>
             </div>
             <div className="Card__desc">
-                <a href="#product-card" className="Card__desc--link">
+                <Link to="/products" className="Card__desc--link">
                     <span className="Card__title">
                         {title}
                     </span>
                     <span className="Card__text">
                         {desc}
                     </span>
-                </a>
+                </Link>
             </div>
             <div className="Card__price">
                 <div className="Card__price--text">

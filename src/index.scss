@@ -90,6 +90,40 @@ button {
 .offset-h-sm {
   padding: 0 16px;
 }
+.icon-info {
+  font-family: "Segoe UI Variable", serif;
+  font-weight: 600;
+  font-size: 18px;
+  background-color: dodgerblue;
+  color: yellow;
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+[data-hint] {
+  cursor: pointer;
+}
+[data-hint]::before {
+  opacity: 0;
+  visibility: hidden;
+}
+[data-hint]:hover::before {
+  content: attr(data-hint);
+  color: #fff;
+  background-color: #010118;
+  position: absolute;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Arial, sans-serif;
+  margin-top: 56px;
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
 //typographic
 h1, h2, h3, h4, h5, h6 {
   padding: 16px 0;
