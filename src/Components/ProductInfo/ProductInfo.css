@@ -1,0 +1,117 @@
+.product-info__container {
+  gap: 24px;
+}
+.product-info__row {
+  gap: 32px 48px;
+}
+.product-info__cover {
+  max-width: 400px;
+  width: 100%;
+}
+.product-info__cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.product-info__head--title {
+  justify-content: space-between;
+  gap: 16px;
+}
+.product-info__head--code .text-label {
+  font-size: 14px;
+}
+.product-info__head--code .text-code {
+  padding-left: 4px;
+  color: #3389f1;
+  font-weight: bold;
+  font-size: 16px;
+}
+.product-info__head--back {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.product-info__head--back button {
+  border: 1px solid #e0e0e0;
+  border-radius: 16px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.product-info__head--back button:hover {
+  color: yellow;
+  background-color: #3389f1;
+}
+.product-info__box {
+  min-width: 320px;
+  gap: 24px;
+}
+.product-info__box--cat .text-label {
+  font-size: 12px;
+}
+.product-info__box--cat .text-category {
+  padding-left: 4px;
+  text-transform: capitalize;
+}
+.product-info__box--price {
+  gap: 24px;
+}
+.product-info__box--action {
+  gap: 24px;
+}
+.product-info__box--amount {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+.product-info__box--amount .button {
+  width: 40px;
+}
+.product-info__box--amount .button__text {
+  font-weight: 600;
+  font-size: 20px;
+  color: #3389f1;
+}
+.product-info__box--amount .input-amount {
+  width: 40px;
+  height: 40px;
+  padding: 4px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 0;
+  border-top: none;
+  border-bottom: none;
+  border-color: #e0e0e0;
+}
+.product-info__box--buy {
+  background-color: #3389f1;
+  padding: 4px 24px;
+  border-radius: 32px;
+  color: #fff;
+  transition: 0.2s;
+}
+.product-info__box--buy:hover {
+  background-color: rgba(51, 137, 241, 0.85);
+}
+.product-info__box--buy .button__body {
+  gap: 8px;
+}
+.product-info__box--buy .button__icon {
+  filter: brightness(0) invert(1);
+}
+.product-info__box--buy .button__text {
+  font-size: 18px;
+  font-weight: 500;
+}
+.product-info__box--rang {
+  text-align: right;
+}
+.product-info__box--rang .text-rang {
+  padding-left: 4px;
+  font-weight: bold;
+}
+.product-info .text-price {
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+/*# sourceMappingURL=ProductInfo.css.map */

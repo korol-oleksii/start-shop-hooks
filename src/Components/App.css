@@ -20,7 +20,10 @@
 }
 
 .content__title {
-  padding: 16px 0;
+  padding: 0;
+}
+.content__row {
+  margin-bottom: 24px;
 }
 
 .cards {
@@ -44,13 +47,14 @@
 .Card:hover {
   box-shadow: 0 4px 12px 0 rgba(32, 32, 32, 0.25);
 }
-.Card__image {
-  height: 228px;
+.Card__image--link {
+  display: block;
+  height: 200px;
 }
 .Card__image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .Card__cat {
   font-size: 12px;
@@ -115,7 +119,18 @@
   filter: brightness(0) invert(1);
 }
 .Card__more {
+  margin: 0 0 0 auto;
   padding: 8px 16px 16px;
+}
+.Card__more button {
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 16px;
+  transition: 0.2s;
+}
+.Card__more button:hover {
+  background-color: #3389f1;
+  color: yellow;
 }
 
 .change-photo-action {

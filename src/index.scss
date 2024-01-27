@@ -71,7 +71,7 @@ button {
   padding: 0;
 }
 .input {
-  border: 1px solid #123a3b;
+  border: 1px solid #e0e0e0;
   background-color: transparent;
   min-height: 32px;
   padding: 0 8px;
@@ -86,6 +86,10 @@ button {
       opacity: 0;
     }
   }
+}
+img {
+  border: none;
+  max-width: 100%;
 }
 .offset-h-sm {
   padding: 0 16px;
@@ -127,4 +131,27 @@ button {
 //typographic
 h1, h2, h3, h4, h5, h6 {
   padding: 16px 0;
+}
+.text {
+  line-height: 21px;
+}
+//flex options
+.mesh--cell {
+  display: flex;
+  flex-direction: column;
+}
+.mesh--row {
+  display: flex;
+}
+.mesh--wrap {
+  flex-wrap: wrap;
+}
+.mesh--row-v-center {
+  align-items: center;
+}
+[data-flex="0"] {
+  flex: 0 0 auto;
+}
+[data-flex="1"] {
+  flex: 1 1 auto;
 }

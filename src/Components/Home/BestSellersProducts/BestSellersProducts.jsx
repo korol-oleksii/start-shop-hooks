@@ -1,29 +1,36 @@
 import buyCart from "../../../assets/img/buy.svg";
+import {Link, useNavigate} from "react-router-dom";
 
 const BestSellersProducts = ({productBestHome}) => {
+
+    let navigate = useNavigate()
+    const showMoreHandler = () => {
+        navigate(`/product-info/${productBestHome.id}`);
+    }
+
     return (
         <div className="BestSellersProducts Card">
             <div className="Card__image">
-                <a className="Card__image--link">
+                <Link to={`/product-info/${productBestHome.id}`} className="Card__image--link">
                     <img src={productBestHome.image} alt={productBestHome.title}/>
-                </a>
+                </Link>
             </div>
             <div className="Card__meta">
                 <div className="Card__cat">
-                    <a href="#cat" className="Card__cat--link">
+                    <Link to='/products' className="Card__cat--link">
                         {productBestHome.category}
-                    </a>
+                    </Link>
                 </div>
             </div>
             <div className="Card__desc">
-                <a className="Card__desc--link">
+                <Link to={`/product-info/${productBestHome.id}`} className="Card__desc--link">
                     <span className="Card__title">
                         {productBestHome.title}
                     </span>
                     <span className="Card__text">
                         {productBestHome.description}
                     </span>
-                </a>
+                </Link>
             </div>
             <div className="Card__price">
                 <div className="Card__price--text">
@@ -38,7 +45,7 @@ const BestSellersProducts = ({productBestHome}) => {
                 </div>
             </div>
             <div className="Card__more">
-                <button>Show more...</button>
+                <button onClick={showMoreHandler}>Show more...</button>
             </div>
         </div>
     )

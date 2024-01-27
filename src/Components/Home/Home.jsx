@@ -47,7 +47,7 @@ const Home = (props) => {
                             <div className="cards__list">
                                 {
                                     productsBestHome.slice(0, countsProducts).map(productBestHome =>
-                                        <BestSellersProducts productBestHome={productBestHome}/>)
+                                        <BestSellersProducts productBestHome={productBestHome} key={productBestHome.id}/>)
                                 }
                             </div>
                         </div>
