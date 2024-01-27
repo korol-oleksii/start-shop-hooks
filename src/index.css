@@ -46,12 +46,12 @@ html, body {
 
 a {
   text-decoration: none;
-  color: #123a3b;
+  color: #3389f1;
   font-weight: normal;
   transition: 0.15s;
 }
 a:hover {
-  color: #448688;
+  color: #606060;
 }
 a:active {
   color: #000;

@@ -1,0 +1,23 @@
+.BestSellersCard.Card {
+  flex: 0 1 calc(25% - 24px);
+}
+.BestSellersCard .Card__image {
+  height: 200px;
+  width: 200px;
+  margin: auto;
+}
+.BestSellersCard .Card__more {
+  margin: 0 0 0 auto;
+}
+.BestSellersCard .Card__more button {
+  border-radius: 16px;
+  border: 1px solid #e0e0e0;
+  padding: 8px 16px;
+  transition: 0.2s;
+}
+.BestSellersCard .Card__more button:hover {
+  background-color: #3389f1;
+  color: yellow;
+}
+
+/*# sourceMappingURL=BestSellersCard.css.map */

@@ -17,3 +17,10 @@
     }
   }
 }
+
+//Cards
+.Home {
+  .Card {
+    flex: 0 1 calc(25% - 24px);
+  }
+}

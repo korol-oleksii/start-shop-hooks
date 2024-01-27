@@ -11,10 +11,10 @@ const Nav = (props) => {
                             <NavLink to={link.linkUrl}
                                      className={({isActive, isPending, isClass}) =>
                                          [
-                                             isPending ? "pending" : "",
-                                             isActive ? "active" : "",
-                                             isClass ? "" : "nav__link",
-                                         ].join(" ")
+                                             isPending ? 'pending' : '',
+                                             isActive ? 'active' : '',
+                                             isClass ? '' : 'nav__link',
+                                         ].join(' ')
                                      }>
                                 {link.linkName}
                             </NavLink>

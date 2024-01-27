@@ -1,46 +1,34 @@
-import './Card.css';
-import buyCart from '../../../assets/img/buy.svg';
-import buyAddCart from '../../../assets/img/cart.svg';
-import {useState} from "react";
+import buyCart from "../../../assets/img/buy.svg";
+import './BestSellersCard.css';
 
-const Card = ({img, img2, title, category, desc, price}) => {
-
-    const [photo, setPhoto] = useState(img);
-
-    const setChangePhotoHandler = () => {
-        setPhoto(img2);
-        if (photo === img2) {
-            setPhoto(img);
-        }
-    }
-
+const BestSellersCard = ({productBest}) => {
     return (
-        <div className="Card">
+        <div className="BestSellersCard Card">
             <div className="Card__image">
-                <a href="#products" className="Card__image--link">
-                    <img src={photo} alt={title}/>
+                <a className="Card__image--link">
+                    <img src={productBest.image} alt={productBest.title}/>
                 </a>
             </div>
             <div className="Card__meta">
                 <div className="Card__cat">
                     <a href="#cat" className="Card__cat--link">
-                        {category}
+                        {productBest.category}
                     </a>
                 </div>
             </div>
             <div className="Card__desc">
-                <a href="#products" className="Card__desc--link">
+                <a className="Card__desc--link">
                     <span className="Card__title">
-                        {title}
+                        {productBest.title}
                     </span>
                     <span className="Card__text">
-                        {desc}
+                        {productBest.description}
                     </span>
                 </a>
             </div>
             <div className="Card__price">
                 <div className="Card__price--text">
-                    ${price}
+                    ${productBest.price}
                 </div>
                 <div className="Card__price--buy">
                     <button className="button button--buy">
@@ -50,11 +38,11 @@ const Card = ({img, img2, title, category, desc, price}) => {
                     </button>
                 </div>
             </div>
-            <div className="change-photo-action">
-                <button onClick={setChangePhotoHandler}>Change photo</button>
+            <div className="Card__more">
+                <button>Show more...</button>
             </div>
         </div>
     )
 }
 
-export default Card;
+export default BestSellersCard;

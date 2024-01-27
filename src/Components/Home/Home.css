@@ -16,4 +16,8 @@
   transform: scale(1.1) rotate(-8deg);
 }
 
+.Home .Card {
+  flex: 0 1 calc(25% - 24px);
+}
+
 /*# sourceMappingURL=Home.css.map */

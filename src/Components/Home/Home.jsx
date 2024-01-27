@@ -1,6 +1,5 @@
 import './Home.css';
-import Card from "./Card/Card";
-import {useState} from "react";
+import PopularCard from "./PopularCard/PopularCard";
 
 const Home = (props) => {
 
@@ -17,13 +16,13 @@ const Home = (props) => {
                         <div className="cards__list">
                             {
                                 props.dataProducts.cards.slice(0,countsProducts).map(product =>
-                                    <Card id={product.id} img={product.img}
-                                          img2={product.img2}
-                                          title={product.title}
-                                          category={product.category}
-                                          desc={product.desc}
-                                          price={product.price}
-                                          key={product.id}/>)
+                                    <PopularCard id={product.id} img={product.img}
+                                                 img2={product.img2}
+                                                 title={product.title}
+                                                 category={product.category}
+                                                 desc={product.desc}
+                                                 price={product.price}
+                                                 key={product.id}/>)
                             }
                         </div>
                     </div>

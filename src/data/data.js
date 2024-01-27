@@ -24,7 +24,7 @@ let dataPage = {
         navLinks: [
             {id:1, linkUrl: '/', linkName: 'Home'},
             {id:2, linkUrl: '/products', linkName: 'Products'},
-            {id:3, linkUrl: '/delivery', linkName: 'Delivery'},
+            {id:3, linkUrl: '/bestsellers', linkName: 'Bestsellers'},
             {id:4, linkUrl: '/about', linkName: 'About'},
             {id:5, linkUrl: '/contacts', linkName: 'Contacts'},
         ]
@@ -37,6 +37,7 @@ let dataPage = {
                 {id:3, linkUrl: '#3', linkName: 'Travel products'},
                 {id:4, linkUrl: '#4', linkName: 'Products for active travel'},
                 {id:5, linkUrl: '#5', linkName: 'Various assortment'},
+                {id:6, linkUrl: '/bestsellers', linkName: 'BestSellers'},
             ]
         },
         cards: [

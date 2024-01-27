@@ -7,6 +7,7 @@ import Products from "./Products/Products";
 import Delivery from "./Delivery/Delivery";
 import About from "./About/About";
 import Contacts from "./Contacts/Contacts";
+import BestSellers from "./BestSellers/BestSellers";
 
 const App = (props) => {
     return (
@@ -17,6 +18,7 @@ const App = (props) => {
                     <Routes>
                         <Route path='/' element={<Home dataProducts={props.data.products}/>}/>
                         <Route path='/products' element={<Products dataProducts={props.data.products}/>}/>
+                        <Route path='/bestsellers' element={<BestSellers/>}/>
                         <Route path='/delivery' element={<Delivery/>}/>
                         <Route path='/about' element={<About/>}/>
                         <Route path='/contacts' element={<Contacts/>}/>

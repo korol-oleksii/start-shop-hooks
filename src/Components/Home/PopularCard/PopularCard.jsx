@@ -1,10 +1,10 @@
-import './Card.css';
+import './PopularCard.css';
 import buyCart from '../../../assets/img/buy.svg';
 import buyAddCart from '../../../assets/img/cart.svg';
 import {useState} from "react";
 import {Link} from "react-router-dom";
 
-const Card = ({img, img2, title, category, desc, price}) => {
+const PopularCard = ({img, img2, title, category, desc, price}) => {
 
     const [photo, setPhoto] = useState(img);
 
@@ -58,4 +58,4 @@ const Card = ({img, img2, title, category, desc, price}) => {
     )
 }
 
-export default Card;
+export default PopularCard;

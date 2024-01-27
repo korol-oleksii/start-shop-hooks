@@ -5,6 +5,10 @@
   flex-direction: column;
   height: 100%;
 }
+.Aside__body {
+  position: sticky;
+  top: 24px;
+}
 .Aside__title {
   padding-left: 32px;
 }
@@ -21,6 +25,7 @@
   display: block;
   padding: 8px 16px 8px 32px;
   border-left: 4px solid transparent;
+  color: #202020;
 }
 .Aside__link:hover {
   background-color: #fcfcfa;

@@ -5,6 +5,11 @@
   flex-direction: column;
   height: 100%;
 
+  &__body {
+    position: sticky;
+    top: 24px;
+  }
+
   &__title {
     padding-left: 32px;
   }
@@ -21,6 +26,7 @@
     display: block;
     padding: 8px 16px 8px 32px;
     border-left: 4px solid transparent;
+    color: #202020;
 
     &:hover {
       background-color: #fcfcfa;
