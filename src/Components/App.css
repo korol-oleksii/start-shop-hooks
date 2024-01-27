@@ -16,7 +16,11 @@
   background-color: #fff;
 }
 .main__container > * {
-  padding: 16px 32px;
+  padding: 32px;
+}
+
+.content__title {
+  padding: 16px 0;
 }
 
 .cards {

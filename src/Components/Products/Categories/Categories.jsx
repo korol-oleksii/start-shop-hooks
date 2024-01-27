@@ -2,7 +2,7 @@ import DataCard from "./DataCard/DataCard";
 
 const Categories = (props) => {
     return (
-        <div className='Categories content'>
+        <div className="Categories content">
                 <div className="content__container">
                     <div className="content__title">
                         <h2>Our products</h2>
