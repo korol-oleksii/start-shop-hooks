@@ -17,7 +17,7 @@ const ProductInfo = () => {
     const isSticky = (e) => {
         const headProductTitle = document.querySelector('.product-info__head--title');
         const scrollTop = window.scrollY;
-        scrollTop >= 200 ? headProductTitle.classList.add('is-sticky') : headProductTitle.classList.remove('is-sticky');
+        scrollTop >= 260 ? headProductTitle.classList.add('is-sticky') : headProductTitle.classList.remove('is-sticky');
     };
 
     //set data

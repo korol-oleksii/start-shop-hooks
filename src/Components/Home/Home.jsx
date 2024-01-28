@@ -23,7 +23,7 @@ const Home = (props) => {
                         <div className="content__title">
                             <h2>Popular products <span className="icon-info" data-hint="from data.js">i</span></h2>
                         </div>
-                        <div className="cards">
+                        <div className="cards cards-default">
                             <div className="cards__list">
                                 {
                                     props.dataProducts.cards.slice(0, countsProducts).map(product =>

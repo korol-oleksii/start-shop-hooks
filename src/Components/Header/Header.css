@@ -25,4 +25,8 @@
   filter: brightness(0) invert(1);
 }
 
+.cards-default .Card__image img {
+  object-fit: cover;
+}
+
 /*# sourceMappingURL=Header.css.map */

@@ -4,4 +4,8 @@
   flex-wrap: wrap;
   padding-left: 0;
   height: 100%;
+
+  .Card__image img {
+    object-fit: cover;
+  }
 }
