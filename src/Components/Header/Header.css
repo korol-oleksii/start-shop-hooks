@@ -7,16 +7,22 @@
   border-bottom: 1px solid beige;
 }
 .header .Cart .button {
+  border-radius: 50%;
   border: none;
   padding: 0;
+  width: 40px;
+  height: 40px;
 }
 .header .Cart .button img {
+  position: relative;
+  top: 2px;
   transition: 0.2s;
 }
 .header .Cart .button:hover {
-  border-radius: 50%;
-  background-color: transparent;
-  opacity: 0.85;
+  background-color: #3389f1;
+}
+.header .Cart .button:hover img {
+  filter: brightness(0) invert(1);
 }
 
 /*# sourceMappingURL=Header.css.map */

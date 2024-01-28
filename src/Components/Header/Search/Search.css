@@ -20,6 +20,7 @@
   opacity: 0.8;
 }
 .search__input {
+  border-radius: 16px;
   padding-left: 40px;
   width: 100%;
   transition: 0.8s;

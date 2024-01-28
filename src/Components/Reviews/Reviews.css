@@ -1,0 +1,61 @@
+.reviews {
+  max-width: 600px;
+}
+.reviews__body {
+  gap: 32px;
+}
+.reviews__label {
+  position: relative;
+}
+.reviews__label .error {
+  font-size: 12px;
+  color: red;
+}
+.reviews__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.reviews__fields .input--text {
+  max-width: 250px;
+}
+.reviews__fields .input--textarea {
+  min-height: 100px;
+  padding: 12px 8px;
+}
+.reviews__action {
+  margin-left: auto;
+}
+.reviews__cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.review__card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 0 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: 0.2s;
+}
+.review__card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+.review__name {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  padding: 4px 8px;
+  margin-top: -14px;
+  width: min-content;
+}
+.review__date {
+  text-align: right;
+  font-size: 12px;
+}
+
+/*# sourceMappingURL=Reviews.css.map */

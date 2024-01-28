@@ -27,13 +27,9 @@ const Home = (props) => {
                             <div className="cards__list">
                                 {
                                     props.dataProducts.cards.slice(0, countsProducts).map(product =>
-                                        <PopularCard id={product.id} img={product.img}
-                                                     img2={product.img2}
-                                                     title={product.title}
-                                                     category={product.category}
-                                                     desc={product.desc}
-                                                     price={product.price}
-                                                     key={product.id}/>)
+                                        <PopularCard id={product.id} img={product.img} img2={product.img2}
+                                                     title={product.title} category={product.category}
+                                                     desc={product.desc} price={product.price} key={product.id}/>)
                                 }
                             </div>
                         </div>
@@ -46,8 +42,9 @@ const Home = (props) => {
                         <div className="cards">
                             <div className="cards__list">
                                 {
-                                    productsBestHome.slice(0, countsProducts).map(productBestHome =>
-                                        <BestSellersProducts productBestHome={productBestHome} key={productBestHome.id}/>)
+                                    productsBestHome.length > 0 ? productsBestHome.slice(0, countsProducts).map(productBestHome =>
+                                            <BestSellersProducts productBestHome={productBestHome}
+                                                                 key={productBestHome.id}/>) : <div className="loading"></div>
                                 }
                             </div>
                         </div>

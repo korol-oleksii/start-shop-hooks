@@ -3,9 +3,24 @@ import buyIcon from '../../assets/img/buy.svg'
 import {useEffect, useState} from "react";
 import axios from "axios";
 import {useNavigate, useParams} from "react-router-dom";
+import Reviews from "../Reviews/Reviews";
 
 const ProductInfo = () => {
 
+    // Sticky title
+    useEffect(() => {
+        window.addEventListener('scroll', isSticky);
+        return () => {
+            window.removeEventListener('scroll', isSticky);
+        };
+    });
+    const isSticky = (e) => {
+        const headProductTitle = document.querySelector('.product-info__head--title');
+        const scrollTop = window.scrollY;
+        scrollTop >= 200 ? headProductTitle.classList.add('is-sticky') : headProductTitle.classList.remove('is-sticky');
+    };
+
+    //set data
     const [productsInfo, setProductsInfo] = useState({});
 
     let {productId} = useParams();
@@ -15,6 +30,7 @@ const ProductInfo = () => {
             .then(response => setProductsInfo(response.data))
     }, []);
 
+    //add count to amount
     const [amount, setAmount] = useState(1);
 
     useEffect(() => {
@@ -23,12 +39,12 @@ const ProductInfo = () => {
         }
     }, [amount]);
 
-    let amountDecrement = () => {
+    let amountDecrementHandler = () => {
         return (
             setAmount(amount - 1)
         )
     }
-    let amountIncrement = () => {
+    let amountIncrementHandler = () => {
         return (
             setAmount(amount + 1)
         )
@@ -68,18 +84,18 @@ const ProductInfo = () => {
                         <img src={productsInfo.image} alt={productsInfo.title}/>
                     </div>
                     <div className="product-info__box mesh--cell" data-flex="1">
-                        <div className="product-info__box--prices">
+                        <div className="product-info__box--row product-info__box--prices">
                             <div className="product-info__box--price mesh--cell">
                                 <div className="text-price">${productsInfo.price}</div>
                                 <div className="product-info__box--action mesh--row mesh--row-v-center">
                                     <div className="product-info__box--amount">
-                                        <button className="button button--decrement" onClick={amountDecrement}>
+                                        <button className="button button--decrement" onClick={amountDecrementHandler}>
                                             <span className="button__text">
                                                 &ndash;
                                             </span>
                                         </button>
                                         <input className="input input-amount" type="text" onChange={amountInputHandler} value={amount}/>
-                                        <button className="button button--increment" onClick={amountIncrement}>
+                                        <button className="button button--increment" onClick={amountIncrementHandler}>
                                             <span className="button__text">
                                                 +
                                             </span>
@@ -98,13 +114,19 @@ const ProductInfo = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="product-info__box--desc">
+                        <div className="product-info__box--row product-info__box--desc">
                             <div className="text">{productsInfo.description}</div>
                         </div>
-                        {/*<div className="product-info__box--rang">
+
+                        {/*<div className="product-info__box--row product-info__box--rang">
                             <span className="text-label">Rating:</span>
                             <span className="text-rang">{productsInfo.rating.rate} / 5</span>
                         </div>*/}
+
+                        <div className="product-info__box--row product-info__box--reviews">
+                            <Reviews/>
+                        </div>
+
                     </div>
                 </div>
             </div>

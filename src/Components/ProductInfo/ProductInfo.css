@@ -1,3 +1,6 @@
+.product-info {
+  animation: load 1s ease-in-out;
+}
 .product-info__container {
   gap: 24px;
 }
@@ -6,16 +9,33 @@
 }
 .product-info__cover {
   max-width: 400px;
+  max-height: 400px;
   width: 100%;
+  height: auto;
+  position: sticky;
+  top: 64px;
 }
 .product-info__cover img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .product-info__head--title {
   justify-content: space-between;
   gap: 16px;
+}
+.product-info__head--title.is-sticky {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 0 32px;
+  transform: translateX(-50%);
+  z-index: 22;
 }
 .product-info__head--code .text-label {
   font-size: 14px;
@@ -61,6 +81,7 @@
 .product-info__box--amount {
   border: 1px solid #e0e0e0;
   border-radius: 4px;
+  display: flex;
 }
 .product-info__box--amount .button {
   width: 40px;

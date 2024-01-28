@@ -24,7 +24,8 @@ const BestSellers = () => {
                 <div className="cards">
                     <div className="cards__list">
                         {
-                            productsBest.map(productBest => <BestSellersCard productBest={productBest} key={productBest.id}/>)
+                            productsBest.length > 0 ? productsBest.map(productBest => <BestSellersCard
+                                productBest={productBest} key={productBest.id}/>) : <div className="loading"></div>
                         }
                     </div>
                 </div>

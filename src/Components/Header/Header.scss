@@ -9,17 +9,24 @@
   }
   .Cart {
     .button {
+      border-radius: 50%;
       border: none;
       padding: 0;
+      width: 40px;
+      height: 40px;
 
       img {
+        position: relative;
+        top: 2px;
         transition: .2s;
       }
 
       &:hover {
-        border-radius: 50%;
-        background-color: transparent;
-        opacity: .85;
+        background-color: #3389f1;
+
+        img {
+          filter: brightness(0) invert(1);
+        }
       }
     }
   }

@@ -65,10 +65,25 @@ button {
   border: none;
   background-color: transparent;
   cursor: pointer;
+  transition: .2s;
 }
-.nav ul {
-  list-style: none;
-  padding: 0;
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  font-size: 16px;
+
+  &--primary {
+    background-color: #3389f1;
+    color: #fff;
+    padding: 0 24px;
+    border-radius: 32px;
+
+    &:hover {
+      background-color: transparentize(#3389f1, .15);
+    }
+  }
 }
 .input {
   border: 1px solid #e0e0e0;
@@ -77,14 +92,41 @@ button {
   padding: 0 8px;
   font-size: 14px;
   line-height: 100%;
-  border-radius: 16px;
+  border-radius: 4px;
+  transition: .2s;
 
   &:focus {
     outline: 0;
+    border: 1px solid #909090;
 
     &::placeholder {
       opacity: 0;
     }
+  }
+
+  &:focus~.text--placeholder,
+  &:not(:placeholder-shown)~.text--placeholder {
+    top: -8px;
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 400;
+    background-color: #fff;
+    z-index: 1;
+    padding: 2px 8px;
+  }
+}
+textarea {
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  resize: none;
+  padding: 8px;
+  width: 100%;
+  min-height: 100px;
+  transition: .2s;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid #909090;
   }
 }
 img {
@@ -93,6 +135,10 @@ img {
 }
 .offset-h-sm {
   padding: 0 16px;
+}
+.nav ul {
+  list-style: none;
+  padding: 0;
 }
 .icon-info {
   font-family: "Segoe UI Variable", serif;
@@ -134,6 +180,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 .text {
   line-height: 21px;
+
+  &--small {
+    font-size: 10px;
+    line-height: 12px;
+    color: #606060;
+  }
+  &--placeholder {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 19px;
+    color: #909090;
+    position: absolute;
+    left: 15px;
+    top: 6px;
+    cursor: text;
+    -webkit-transition: top .2s ease-in-out;
+    transition: top .2s ease-in-out
+  }
 }
 //flex options
 .mesh--cell {
@@ -154,4 +218,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-flex="1"] {
   flex: 1 1 auto;
+}
+//loading
+.loading {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: conic-gradient(#0000 10%, #3389f1);
+  mask: radial-gradient(farthest-side, #0000 calc(100% - 4px), #000 0);
+  animation: loading 1s infinite linear;
+  margin: 24px auto;
+}
+@keyframes loading {
+  0% {
+    transform: rotate(-360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
